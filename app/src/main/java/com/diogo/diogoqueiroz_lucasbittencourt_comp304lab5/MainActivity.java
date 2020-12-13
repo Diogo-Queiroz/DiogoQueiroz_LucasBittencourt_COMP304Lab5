@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         listOfTypesView.setLayoutManager(new LinearLayoutManager(this));
 
         String[] types = getResources().getStringArray(R.array.landmark_types);
-        TypesAdapter typesAdapter = new TypesAdapter(getApplicationContext(), types, "MainActivity");
+        TypesAdapter typesAdapter = new TypesAdapter(getApplicationContext(), types);
         listOfTypesView.setAdapter(typesAdapter);
     }
 

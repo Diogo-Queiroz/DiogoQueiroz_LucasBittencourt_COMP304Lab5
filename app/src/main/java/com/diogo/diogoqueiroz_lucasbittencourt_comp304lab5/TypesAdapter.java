@@ -14,14 +14,12 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder
 {
     private Context context;
     private String[] types;
-    private String activity;
     private SharedPreferences sharedPreferences;
 
-    public TypesAdapter(Context context, String[] types, String activity)
+    public TypesAdapter(Context context, String[] types)
     {
         this.context = context;
         this.types = types;
-        this.activity = activity;
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder
@@ -31,7 +29,7 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder
         public MyViewHolder(View itemView)
         {
             super(itemView);
-            type = itemView.findViewById(R.id.recycler_item_type);
+            type = itemView.findViewById(R.id.recycler_item_name);
         }
     }
 

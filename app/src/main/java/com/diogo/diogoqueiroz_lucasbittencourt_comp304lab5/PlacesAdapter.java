@@ -68,16 +68,18 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position)
     {
-        //SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         holder.placeNameTextView.setText(placeName.get(position));
         holder.placeAddressTextView.setText(placeAddress.get(position));
-        /*holder.itemView.setOnClickListener(v ->
+        holder.itemView.setOnClickListener(v ->
         {
-            Intent intent = new Intent(context.getApplicationContext(), PlaceActivity.class).setFlags(FLAG_ACTIVITY_NEW_TASK); // todo change to map acticity
+            Intent intent = new Intent(context.getApplicationContext(), MapsActivity.class).setFlags(FLAG_ACTIVITY_NEW_TASK); // todo change to map acticity
             editor.putString("place_selected", places[position]);
+            //editor.putFloat("place_lat", Float.parseFloat(String.valueOf(latitude)));
+            //editor.putFloat("place_lon", Float.parseFloat(String.valueOf(longitude)));
             editor.apply();
             context.startActivity(intent);
-        });*/
+        });
     }
 
     @Override

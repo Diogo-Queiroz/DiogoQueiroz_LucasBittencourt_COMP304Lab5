@@ -28,8 +28,9 @@
         <item>Sabor Brasil                      # 1702 Saint Clair Avenue West, Toronto, ON, M6N 1J1, Canada # 43.6745194 # -79.4592278  #Brazilian</item>
         <item>Rio 40 Restaurant                 # 1256 Saint Clair Avenue West, Toronto, ON, M6N 1B9, Canada # 43.6774604 # -79.4464794  #Brazilian</item>
         <item>Via Norte Restaurante             # 938 College Street, Toronto, ON, M6H 1A4, Canada           # 43.6537504 # -79.426217   #Portuguese</item>
-        <item>Churrasqueira Martins Grill House # 605 Rogers Road #1, York, ON, M6M 1B9, Canada              # 43.6807613 # -79.4734944  #Portuguese</item>
+        <item>Churrasqueira Martins Grill House # 605 Rogers Road, York, ON, M6M 1B9, Canada              # 43.6807613 # -79.4734944  #Portuguese</item>
         <item>El Sazon Mexicano                 # 1284 Saint Clair Avenue West, Toronto, ON, M6E 1C1, Canada # 43.6771597 # -79.4477442  #Mexican</item>
         <item>Taco Bell                         # 2300 Yonge Street, Toronto, ON, M4P 1E4, Canada            # 43.7072693 # -79.3996009  #Mexican</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

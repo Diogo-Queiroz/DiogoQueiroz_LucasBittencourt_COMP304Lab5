@@ -24,14 +24,14 @@ public class PlaceActivity extends AppCompatActivity {
 
         String[] landmarks = getResources().getStringArray(R.array.landmark_names);
         SharedPreferences sharedpreferences = getSharedPreferences("choices", MODE_PRIVATE);
-        String type = sharedpreferences.getString("type","");
+        String type = sharedpreferences.getString("type_selected","");
         TextView typeTexView = findViewById(R.id.typeText);
         typeTexView.setText(type);
 
         List<String> filtered = new ArrayList();
         for (String item:landmarks) {
-            String[] info  = item.split("%");
-            if(info[0].equals(type)) {
+            String[] info  = item.split("#");
+            if(info[info.length - 1].equals(type)) {
                 filtered.add(item);
             }
         }

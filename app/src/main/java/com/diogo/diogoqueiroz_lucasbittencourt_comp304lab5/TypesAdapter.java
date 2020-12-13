@@ -1,6 +1,7 @@
 package com.diogo.diogoqueiroz_lucasbittencourt_comp304lab5;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder>
 {
@@ -20,6 +23,7 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder
     {
         this.context = context;
         this.types = types;
+        this.sharedPreferences = context.getSharedPreferences("options", Context.MODE_PRIVATE);
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder
@@ -47,7 +51,15 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position)
     {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         holder.type.setText(types[position]);
+        holder.itemView.setOnClickListener(v ->
+        {
+            Intent intent = new Intent(context.getApplicationContext(), PlaceActivity.class).setFlags(FLAG_ACTIVITY_NEW_TASK);
+            editor.putString("type_selected", types[position]);
+            editor.apply();
+            context.startActivity(intent);
+        });
     }
 
     @Override

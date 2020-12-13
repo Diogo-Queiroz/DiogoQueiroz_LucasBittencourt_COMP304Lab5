@@ -5,14 +5,17 @@
     <string name="recycler_item_type_text">recycler item type text</string>
 
     <string-array name="landmark_types">
-        <item>Type 1</item>
-        <item>Type 2</item>
+        <item>Agricultural</item>
+        <item>Food</item>
+        <item>Art</item>
+        <item>Entertainment</item>
     </string-array>
 
     <string-array name="landmark_names">
-        <item>Address 1, Type 1</item>
-        <item>Address 2, Type 1</item>
-        <item>Address 1, Type 2</item>
-        <item>Address 2, Type 2</item>
+        <!--  Landmark name # address # city # Province # postal # country # latitude # longitude # type-->
+        <item>Agri River Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Agricultural</item>
+        <item>Super Art Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Art</item>
+        <item>Big Food Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Food</item>
+        <item>Shoppping Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Entertainment</item>
     </string-array>
 </resources>

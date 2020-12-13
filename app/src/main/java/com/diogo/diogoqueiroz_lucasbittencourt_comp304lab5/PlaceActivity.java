@@ -23,7 +23,7 @@ public class PlaceActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         String[] landmarks = getResources().getStringArray(R.array.landmark_names);
-        SharedPreferences sharedpreferences = getSharedPreferences("choices", MODE_PRIVATE);
+        SharedPreferences sharedpreferences = getSharedPreferences("options", MODE_PRIVATE);
         String type = sharedpreferences.getString("type_selected","");
         TextView typeTexView = findViewById(R.id.typeText);
         typeTexView.setText(type);
@@ -35,8 +35,8 @@ public class PlaceActivity extends AppCompatActivity {
                 filtered.add(item);
             }
         }
-        TypesAdapter itemAdapter = new TypesAdapter(getApplicationContext(), filtered.toArray(new String[filtered.size()]));
-        recyclerView.setAdapter(itemAdapter);
+        PlacesAdapter placesAdapter = new PlacesAdapter(getApplicationContext(), filtered.toArray(new String[filtered.size()]));
+        recyclerView.setAdapter(placesAdapter);
     }
 
 }

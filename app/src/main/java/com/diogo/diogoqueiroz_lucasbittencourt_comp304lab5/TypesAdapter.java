@@ -23,7 +23,7 @@ public class TypesAdapter extends RecyclerView.Adapter<TypesAdapter.MyViewHolder
     {
         this.context = context;
         this.types = types;
-        this.sharedPreferences = context.getSharedPreferences("options", Context.MODE_PRIVATE);
+        this.sharedPreferences = context.getSharedPreferences("options", 0);
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder

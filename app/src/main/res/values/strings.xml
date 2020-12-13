@@ -1,21 +1,35 @@
 <resources>
     <string name="app_name">DiogoQueiroz_LucasBittencourt_COMP304Lab5</string>
-    <string name="app_title">Toronto Places</string>
+    <string name="app_title">Toronto Restaurants</string>
     <string name="app_logo">app_logo</string>
     <string name="recycler_item_type_text">recycler item type text</string>
 
     <string-array name="landmark_types">
-        <item>Agricultural</item>
-        <item>Food</item>
-        <item>Art</item>
-        <item>Entertainment</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Mexican</item>
+        <item>Brazilian</item>
+        <item>Thai</item>
+        <item>Sushi</item>
+        <item>Portuguese</item>
     </string-array>
 
     <string-array name="landmark_names">
         <!--  Landmark name # address # city # Province # postal # country # latitude # longitude # type-->
-        <item>Agri River Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Agricultural</item>
-        <item>Super Art Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Art</item>
-        <item>Big Food Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Food</item>
-        <item>Shoppping Farm#201 Winchester St#Toronto#ON#M4X 1B8#Canada%43.667138%-79.3610495#Entertainment</item>
+        <item>PAI Uptown                        # 2335 Yonge Street, Toronto, ON, M4P 2E6, Canada            # 43.706853  # -79.3982462  #Thai</item>
+        <item>Thai Express                      # 1881 Yonge Street, Toronto, ON, M4S 3C4, Canada            # 43.6975638 # -79.3962727  #Thai</item>
+        <item>PUKKA PUKKA                       # 2633 Yonge Street, Toronto, ON, M4P 2J6, Canada            # 43.7153388 # -79.3999542  #Indian</item>
+        <item>Kothur Indian Cuisine             # 649 Yonge Street, Toronto, ON, M4Y 1Z9, Canada             # 43.6678889 # -79.3856667  #Indian</item>
+        <item>Grazie Ristorante                 # 2373 Yonge Street, Toronto, ON, M4P 2C8, Canada            # 43.7093346 # -79.394467   #Italian</item>
+        <item>Positano Restaurant               # 633 Mt Pleasant Rd, Toronto, ON, M4S 2M9, Canada           # 43.7047029 # -79.3885319  #Italian</item>
+        <item>Sushi By K                        # 874 Eglinton Avenue East, Toronto, ON, M4G 2L1, Canada     # 43.7137328 # -79.365112   #Sushi</item>
+        <item>Sushi Shop                        # 2564 Yonge Street, Toronto, ON, M4P 2J3, Canada            # 43.7137489 # -79.4000343  #Sushi</item>
+        <item>Sushi Rock                        # 2359 Yonge Street, Toronto, ON, M4P 2C8, Canada            # 43.7091008 # -79.3985273  #Sushi</item>
+        <item>Sabor Brasil                      # 1702 Saint Clair Avenue West, Toronto, ON, M6N 1J1, Canada # 43.6745194 # -79.4592278  #Brazilian</item>
+        <item>Rio 40 Restaurant                 # 1256 Saint Clair Avenue West, Toronto, ON, M6N 1B9, Canada # 43.6774604 # -79.4464794  #Brazilian</item>
+        <item>Via Norte Restaurante             # 938 College Street, Toronto, ON, M6H 1A4, Canada           # 43.6537504 # -79.426217   #Portuguese</item>
+        <item>Churrasqueira Martins Grill House # 605 Rogers Road #1, York, ON, M6M 1B9, Canada              # 43.6807613 # -79.4734944  #Portuguese</item>
+        <item>El Sazon Mexicano                 # 1284 Saint Clair Avenue West, Toronto, ON, M6E 1C1, Canada # 43.6771597 # -79.4477442  #Mexican</item>
+        <item>Taco Bell                         # 2300 Yonge Street, Toronto, ON, M4P 1E4, Canada            # 43.7072693 # -79.3996009  #Mexican</item>
     </string-array>
 </resources>
